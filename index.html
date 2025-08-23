@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/barbell.png" type="image/x-icon">
+    <title>GYMAWY</title>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+            document.getElementById("navLogin").classList.toggle("show");
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="image/barbell.png" width="50px" alt="logo" title="GYMAWY">
+        </div>
+
+        <div class="links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="page/About.html">About</a>
+            <a href="page/Contact_Us.html">Contact us</a>
+        </div>
+
+        <div class="login" id="navLogin">
+            <a href="page/login.html">Login</a>
+            <a href="page/Sign_Up.html">Sign Up</a>
+        </div>
+
+        <!-- زرار الهامبورجر -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+
+    <main class="product-container">
+        <section class="card" id="product">
+            <img src="image/1.png" alt="product_1" title="product_1">
+            <div class="content">
+                <H1>Everyday Seamless Racerback Sports Bra</H1>
+                <p>Us $450</p>
+                <button type="submit">Buy Now</button>
+            </div class="content">
+        </section>
+
+
+        <section class="card" id="product">
+            <img src="image/5.png" alt="product_1" title="product_3">
+            <div class="content">
+                <H1>Muscle Fit Shirts</H1>
+                <p>Us $500</p>
+                <button type="submit">Buy Now</button>
+            </div class="content">
+        </section>
+
+        <section class="card" id="product">
+            <img src="image/2.png" alt="product_1" title="product_2">
+            <div class="content">
+                <H1>Everyday Seamless T-Shirt</H1>
+                <p>Us $700</p>
+                <button type="submit">Buy Now</button>
+            </div class="content">
+        </section>
+
+        <section class="card" id="product">
+            <img src="image/3.png" alt="product_1" title="product_4">
+            <div class="content">
+                <H1>Critical Stringer</H1>
+                <p>Us $350</p>
+                <button type="submit">Buy Now</button>
+            </div class="content">
+        </section>
+
+    </main>
+
+</body>
+<footer>
+    <p>&copy; 2023 GYMAWY. All rights reserved.</p>
+</footer>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="About.css">
+    <link rel="shortcut icon" href="../image/barbell.png" type="image/x-icon">
+    <title>GYMAWY | About</title>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+            document.getElementById("navLogin").classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../image/barbell.png" width="50px" alt="logo" title="GYMAWY">
+        </div>
+        <div class="links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact_Us.html">Contact us</a>
+        </div>
+        <div class="login" id="navLogin">
+            <a href="login.html">Login</a>
+            <a href="Sign_Up.html">Sign Up</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <div class="image"></div>
+
+    <main>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>
+                Welcome to our website 👋
+                We are a passionate team specializing in <strong>technology and software development</strong>.
+                Our mission is to help individuals and businesses build high-quality, user-friendly websites and
+                applications.
+            </p>
+
+            <p>
+                Since our journey started in <strong>2020</strong>, we have been constantly improving our services to
+                meet the needs of our clients.
+            </p>
+
+            <h2>Our Vision</h2>
+            <p>
+                To become leaders in the software industry and provide creative solutions that support digital
+                transformation.
+            </p>
+
+            <h2>Our Values</h2>
+            <ul>
+                <li>Quality First</li>
+                <li>Transparency & Honesty</li>
+                <li>Continuous Innovation</li>
+                <li>Customer Satisfaction</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GYMAWY. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f8fb;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    background-color: #111;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav div a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav div a:hover {
+    color: #f39c12;
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.login {
+    margin-right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.login a {
+    padding: 6px 12px;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login a:hover {
+    background: #f39c12;
+    color: black;
+}
+
+/* زرار الهامبورجر */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================= MAIN ================= */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.form {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 25px;
+    text-align: center;
+}
+
+.form h1 {
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background: #f39c12;
+    color: black;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background: white;
+    color: black;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .links,
+    .login {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .links.show,
+    .login.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .form {
+        width: 90%;
+    }
+}

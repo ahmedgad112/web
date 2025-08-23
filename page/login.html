@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="../image/barbell.png" type="image/x-icon">
+    <title>GYMAWY | Login</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="../image/barbell.png" width="50px" alt="logo" title="GYMAWY">
+        </div>
+        <div class="links">
+            <a href="../index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact_Us.html">Contact us</a>
+        </div>
+        <div class="login">
+            <a href="login.html">Login</a>
+            <a href="Sign_Up.html">Sign Up</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Main Content -->
+    <main>
+        <div class="form">
+            <h1>Login</h1>
+            <form>
+                <label for="email">Enter Your Email</label><br>
+                <input type="email" placeholder="Email" required><br>
+                <label for="password">Enter Your Password</label><br>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 GYMAWY. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.links').classList.toggle('show');
+            document.querySelector('.login').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

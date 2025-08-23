@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact_Us.css">
+    <link rel="shortcut icon" href="../image/barbell.png" type="image/x-icon">
+    <title>GYMAWY | Contact us</title>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".links").classList.toggle("show");
+            document.querySelector(".login").classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../image/barbell.png" width="50px" alt="logo" title="GYMAWY">
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="links">
+            <a href="../index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact_Us.html">Contact us</a>
+        </div>
+        <div class="login">
+            <a href="login.html">Login</a>
+            <a href="Sign_Up.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form">
+            <h1>Contact us</h1>
+            <form>
+                <label for="name">Enter Name</label><br>
+                <input type="text" placeholder="Name" required> <br>
+                <label for="email">Enter Email</label><br>
+                <input type="email" placeholder="Email" required><br>
+                <label for="subject">Subject</label><br>
+                <input type="text" placeholder="Subject" required><br>
+                <label for="message">Message</label><br>
+                <textarea placeholder="Message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GYMAWY. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

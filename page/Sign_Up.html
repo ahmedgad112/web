@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sign_Up.css">
+    <link rel="shortcut icon" href="../image/barbell.png" type="image/x-icon">
+    <title>GYMAWY | Sign Up</title>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+            document.getElementById("navLogin").classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../image/barbell.png" width="50px" alt="logo" title="GYMAWY">
+        </div>
+        <div class="links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact_Us.html">Contact us</a>
+        </div>
+        <div class="login" id="navLogin">
+            <a href="login.html">Login</a>
+            <a href="Sign_Up.html">Sign Up</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <main>
+        <div class="form">
+            <h1>Sign Up</h1>
+            <form>
+                <label for="name">Enter Your Name</label><br>
+                <input type="text" placeholder="Name" required> <br>
+
+                <label for="email">Enter Your Email</label><br>
+                <input type="email" placeholder="Email" required><br>
+
+                <label for="phone">Enter Your Phone</label><br>
+                <input type="tel" placeholder="Phone"> <br>
+
+                <label for="password">Enter Your Password</label><br>
+                <input type="password" placeholder="Password" required><br>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GYMAWY. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
